@@ -42,3 +42,21 @@ You need to include the `p3p.urls` urlpatterns in your root url configuration, f
 .. warning::
 
     Please keep in mind you should follow the W3C prefix in pattern. So the browser can resolve the ``/w3c/p3p.xml``. In the future I'll probably set a HTTP header for this, but right now I'm too lazy to do this.
+    
+Overriding templates
+^^^^^^^^^^^^^^^^^^^^
+
+You need to override at least 2 templates to configure your project specific HTTP headers and policy:
+    
+    * `templates/p3p/headers.txt`
+
+Contains the actual HTTP headers which are sent to the browser. For e.g.: `CP="NOI CURa ADMa DEVa TAIa CONa OUR DELa BUS IND PHY ONL UNI PUR COM NAV DEM STA"`    
+    
+    * `templates/p3p/policy.p3p`
+    
+    Contains the policy as required for the application. You can generate one by using the IBM P3P Policy Editor.
+    
+    
+.. note::
+
+    I left the initial templates mostly blank to prevent default usage. Mainly because every application has its own specific policies and it requires you to **THINK** about what policy fits your website.
