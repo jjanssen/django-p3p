@@ -14,6 +14,14 @@ Install django-p3p with pip::
 
     $ pip install -e http://github.com/jjanssen/django-p3p#egg=django-p3p
     
+or::
+
+    $ pip install django-p3p
+    
+.. note::
+
+This package is currently not available on Python Package Index (PyPi).
+    
     
 Configuration
 -------------
