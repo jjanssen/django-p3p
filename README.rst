@@ -5,7 +5,9 @@ About Django P3P
 ----------------
 If your webpage uses sessions you willl lose your session in Internet Explorer when your page gets embedded into in iFrame. This problem can be solved by setting application specific `P3P headers <http://en.wikipedia.org/wiki/P3P>`_.
 
-Django P3P is an application which makes it easier to set those specific headers for your Django application. This package includes the IBM P3P Policy Editor for determining the exact headers you want to use.
+Django P3P is an application which makes it easier to set those specific headers for your Django application. 
+
+.. This package includes the IBM P3P Policy Editor for determining the exact headers you want to use.
 
 
 Installation
@@ -13,7 +15,7 @@ Installation
 
 Install django-p3p with pip::
 
-    $ pip install -e http://github.com/jjanssen/django-p3p
+    $ pip install -e http://github.com/jjanssen/django-p3p#egg=django-p3p
     
     
 Configuration
@@ -39,4 +41,4 @@ You need to include the `p3p.urls` urlpatterns in your root url configuration, f
     
 .. warning::
 
-    Please keep in mind you should follow the W3C prefix in pattern. So the browser can resolve the ``/w3c/p3p.xml``. In the future I'll probably set a HTTP header for this.
+    Please keep in mind you should follow the W3C prefix in pattern. So the browser can resolve the ``/w3c/p3p.xml``. In the future I'll probably set a HTTP header for this, but right now I'm too lazy to do this.
