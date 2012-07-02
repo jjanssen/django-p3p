@@ -54,7 +54,7 @@ Contains the actual HTTP headers which are sent to the browser. For e.g.: `CP="N
     
     * `templates/p3p/policy.p3p`
     
-    Contains the policy as required for the application. You can generate one by using the IBM P3P Policy Editor.
+Contains the policy as required for the application. You can generate one by using the IBM P3P Policy Editor.
     
     
 .. note::
