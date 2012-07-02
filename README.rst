@@ -50,7 +50,7 @@ You need to override at least 2 templates to configure your project specific HTT
     
     * `templates/p3p/headers.txt`
 
-Contains the actual HTTP headers which are sent to the browser. For e.g.: `CP="NOI CURa ADMa DEVa TAIa CONa OUR DELa BUS IND PHY ONL UNI PUR COM NAV DEM STA"`    
+Contains the actual HTTP headers which are sent to the browser. For e.g.: ``CP="NOI CURa ADMa DEVa TAIa CONa OUR DELa BUS IND PHY ONL UNI PUR COM NAV DEM STA"``    
     
     * `templates/p3p/policy.p3p`
     
