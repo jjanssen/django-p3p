@@ -20,7 +20,7 @@ or::
     
 .. note::
 
-This package is currently not available on Python Package Index (PyPi).
+    This package is currently not available on Python Package Index (PyPi).
     
     
 Configuration
