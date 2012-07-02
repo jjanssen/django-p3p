@@ -1,0 +1,12 @@
+# temporary python files
+*.pyc
+
+# Damn you DS_STORE
+.DS_Store
+
+# Prevent adding of dist
+dist/
+*.egg-info
+
+# Prevent adding of dev app
+p3p_example

@@ -7,7 +7,7 @@ If your webpage uses sessions you willl lose your session in Internet Explorer w
 
 Django P3P is an application which makes it easier to set those specific headers for your Django application. 
 
-.. This package includes the IBM P3P Policy Editor for determining the exact headers you want to use.
+.. This package includes the IBM P3P Policy Editor for determining the exact headers you want to use. http://www.w3.org/P3P/imp/IBM/
 
 
 Installation
