@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-p3p',
-    version='0.1.1b',
+    version='1.0.0',
     description='Django P3P makes it easier to set P3P HTTP headers to prevent session loss.',
     long_description=open('README.rst').read(),
     author='Janneke Janssen',
@@ -12,13 +12,13 @@ setup(
     packages=find_packages(exclude=['p3p_example']),
     include_package_data=True,
     platforms='any',
-    license='GPL',
+    license='Apache License, Version 2.0',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'License :: OSI Approved :: Apache Software License',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: POSIX',
         'Programming Language :: Python',
