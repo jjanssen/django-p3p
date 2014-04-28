@@ -63,3 +63,9 @@ Contains the policy as required for the application. You can generate one by usi
 .. note::
 
     I left the initial templates mostly blank to prevent default usage. Mainly because every application has its own specific policies and it requires you to **THINK** about what policy fits your website.
+
+Change log
+^^^^^^^^^^^^^^^^^^^^
+1.0.2
+~~~~~~~~~~~~~~~~~~
+* Update to use the new url style in templates.
