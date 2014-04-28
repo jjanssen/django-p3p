@@ -1,3 +1,4 @@
+{% load url from future %}
 <META>
   <POLICY-REFERENCES>
     <POLICY-REF about="{% 'url' p3p:policy %}">
