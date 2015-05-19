@@ -10,3 +10,6 @@ dist/
 
 # Prevent adding of dev app
 p3p_example
+
+*~
+*.sqlite3
