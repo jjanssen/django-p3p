@@ -1,8 +1,13 @@
+import django
 from django.views.generic import TemplateView
 
 class _XmlMixin(TemplateView):
     def render_to_response(self, context, **response_kwargs):
-        response_kwargs.update({ 'mimetype': 'text/xml' })
+        content_type_name = 'mimetype'
+        if int('%d%d' % (django.VERSION[0:2])) > 14:
+            content_type_name = 'content_type'
+
+        response_kwargs.update({content_type_name: 'text/xml' })
         return super(_XmlMixin, self).render_to_response(context, **response_kwargs)    
 
 
