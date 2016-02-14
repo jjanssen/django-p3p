@@ -3,6 +3,14 @@ Django P3P
 
 .. image:: https://travis-ci.org/jjanssen/django-p3p.svg?branch=develop
     :target: http://travis-ci.org/jjanssen/django-p3p
+.. image:: https://img.shields.io/pypi/v/django-p3p.svg
+    :target: https://pypi.python.org/pypi/django-p3p/
+.. image:: https://img.shields.io/pypi/dm/django-p3p.svg
+    :target: https://pypi.python.org/pypi/django-p3p/
+.. image:: https://img.shields.io/badge/wheel-yes-green.svg
+    :target: https://pypi.python.org/pypi/django-p3p/
+.. image:: https://img.shields.io/pypi/l/django-p3p.svg
+    :target: https://pypi.python.org/pypi/django-p3p/
 .. image:: https://coveralls.io/repos/jjanssen/django-p3p/badge.svg?branch=develop
     :target: https://coveralls.io/github/jjanssen/django-p3p?branch=develop
 
@@ -11,6 +19,7 @@ About Django P3P
 If your webpage uses sessions you willl lose your session in Internet Explorer when your page gets embedded into in iFrame. This problem can be solved by setting application specific `P3P headers <http://en.wikipedia.org/wiki/P3P>`_.
 
 Django P3P is an application which makes it easier to set those specific headers for your Django application. You can use an editor like IBM's P3P Policy Editor to configure your website policy to its needs.
+
 
 Requirements
 ------------

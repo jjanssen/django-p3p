@@ -3,6 +3,9 @@ Changelog
 
 1.1.0 (2016-02-14)
 ~~~~~~~~~~~~~~~~~~
+
+This package was in need of some love and attention.
+
 * Added Django 1.8, 1.9 and 1.10 support
 * Added unit tests and coverage
 * Make the project build with Travis

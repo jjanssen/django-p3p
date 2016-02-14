@@ -1,5 +1,5 @@
 include LICENSE
+include CHANGES.rst
 include README.rst
 include MANIFEST.in
 recursive-include p3p *.py *.xml *.txt *.p3p
-recursive-exclude p3p_example *
