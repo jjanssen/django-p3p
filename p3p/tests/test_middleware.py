@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.http import HttpResponse
 from django.test import RequestFactory, SimpleTestCase
-from p3p.middleware import P3PMiddleware
+
+from ..middleware import P3PMiddleware
 
 
 class P3PMiddlewareTest(SimpleTestCase):

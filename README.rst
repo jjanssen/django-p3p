@@ -12,16 +12,16 @@ If your webpage uses sessions you willl lose your session in Internet Explorer w
 
 Django P3P is an application which makes it easier to set those specific headers for your Django application. You can use an editor like IBM's P3P Policy Editor to configure your website policy to its needs.
 
-**Supports up to Django 1.7**
+Requirements
+------------
+
+Django 1.5.x or greater, Python 2.7 or greater.
+
 
 Installation
 ------------
 
 Install django-p3p with pip::
-
-    $ pip install -e http://github.com/jjanssen/django-p3p#egg=django-p3p
-
-or::
 
     $ pip install django-p3p
 
@@ -48,11 +48,6 @@ You need to include the `p3p.urls` urlpatterns in your root url configuration, f
     (r'^admin/', include(admin.site.urls)),
 
 
-.. warning::
-
-    Please keep in mind you should follow the W3C prefix in pattern. So the browser can resolve the ``/w3c/p3p.xml``. In the future I'll probably set a HTTP header for this, but right now I'm too lazy to do this.
-
-
 Overriding templates
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -70,15 +65,3 @@ Contains the policy as required for the application. You can generate one by usi
 .. note::
 
     I left the initial templates mostly blank to prevent default usage. Mainly because every application has its own specific policies and it requires you to **THINK** about what policy fits your website.
-
-
-Change log
-^^^^^^^^^^^^^^^^^^^^
-
-1.0.3
-~~~~~~~~~~~~~~~~~~
-Added tests and support for Django 1.7
-
-1.0.2
-~~~~~~~~~~~~~~~~~~
-* Update to use the new url style in templates.
