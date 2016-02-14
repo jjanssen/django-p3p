@@ -1,39 +1,23 @@
-from django.core.urlresolvers import reverse
-from django.test import TestCase
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 
-
+from django.http import HttpResponse
+from django.test import RequestFactory, SimpleTestCase
 from p3p.middleware import P3PMiddleware
 
 
-class MiddlewareTest(TestCase):
+class P3PMiddlewareTest(SimpleTestCase):
 
-    def test_add_deader(self):
-        mw = P3PMiddleware()
-        response = {}
-        request = None
+    rf = RequestFactory()
 
-        response = mw.process_response(request, response)
+    def test_p3p_response_header(self):
+        request = self.rf.get('/')
+        response = HttpResponse("Example response")
 
-        self.assertIn('P3P', response)
+        self.assertEqual(
+            P3PMiddleware().process_response(request, response),
+            response
+        )
 
-
-class URLSTest(TestCase):
-
-    def test_reverse(self):
-        reverse('p3p')
-        reverse('policy')
-        
-
-class ViewTest(TestCase):
-
-    def test_get_policy(self):
-
-        url = reverse('policy')
-
-        self.client.get(url)
-
-    def test_get_p3p(self):
-
-        url = reverse('p3p')
-
-        self.client.get(url)
+        self.assertTrue(response.has_header('P3P'))
+        self.assertEqual(response.get('P3P'), 'CP=""')

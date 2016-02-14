@@ -3,16 +3,28 @@ from setuptools import setup, find_packages
 setup(
     name='django-p3p',
     version='1.0.3',
+    license='Apache License, Version 2.0',
+
+    requires=[
+        'Django (>=1.3.7)',
+    ],
+
     description='Django P3P makes it easier to set P3P HTTP headers to prevent session loss.',
     long_description=open('README.rst').read(),
+
     author='Janneke Janssen',
     author_email='j.janssen@lukkien.com',
+
     keywords='session patch middleware django',
+
     url='http://github.com/jjanssen/django-p3p',
+
     packages=find_packages(exclude=['p3p_example']),
     include_package_data=True,
-    platforms='any',
-    license='Apache License, Version 2.0',
+
+    test_suite='runtests',
+
+    zip_safe=False,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',

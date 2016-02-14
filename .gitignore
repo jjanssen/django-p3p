@@ -1,15 +1,16 @@
-# temporary python files
 *.pyc
-
-# Damn you DS_STORE
+*.pyo
+*.mo
+*.db
+*.egg-info/
+*.egg/
+.coverage
+.project
+.idea/
+.pydevproject
+.idea/workspace.xml
 .DS_Store
-
-# Prevent adding of dist
+.tox/
+build/
 dist/
-*.egg-info
-
-# Prevent adding of dev app
-p3p_example
-
-*~
-*.sqlite3
+htmlcov/
