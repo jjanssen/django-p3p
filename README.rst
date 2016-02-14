@@ -1,6 +1,11 @@
 Django P3P
 ==========
 
+.. image:: https://travis-ci.org/jjanssen/django-p3p.svg?branch=develop
+    :target: http://travis-ci.org/jjanssen/django-p3p
+.. image:: https://coveralls.io/repos/jjanssen/django-p3p/badge.svg?branch=develop
+    :target: https://coveralls.io/github/jjanssen/django-p3p?branch=develop
+
 About Django P3P
 ----------------
 If your webpage uses sessions you willl lose your session in Internet Explorer when your page gets embedded into in iFrame. This problem can be solved by setting application specific `P3P headers <http://en.wikipedia.org/wiki/P3P>`_.
