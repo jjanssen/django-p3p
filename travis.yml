@@ -29,7 +29,7 @@ install:
   - pip install -e .
 
 script:
-  - coverage run --source=example/app runtests.py
+  - coverage run --source=p3p runtests.py
 
 after_success:
   - coveralls --verbose
