@@ -11,6 +11,8 @@ Django P3P
     :target: https://pypi.python.org/pypi/django-p3p/
 .. image:: https://img.shields.io/pypi/l/django-p3p.svg
     :target: https://pypi.python.org/pypi/django-p3p/
+.. image:: https://img.shields.io/pypi/pyversions/Django.svg
+    :target: https://pypi.python.org/pypi/django-p3p/
 .. image:: https://coveralls.io/repos/jjanssen/django-p3p/badge.svg?branch=develop
     :target: https://coveralls.io/github/jjanssen/django-p3p?branch=develop
 
