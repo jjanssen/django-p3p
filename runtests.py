@@ -18,7 +18,7 @@ if not settings.configured:
             'p3p'
         ),
         ROOT_URLCONF='p3p.tests.urls',
-        TEST_RUNNER='django.test.simple.DjangoTestSuiteRunner' if django.VERSION < (1, 6) else 'django.test.runner.DiscoverRunner',
+        TEST_RUNNER='django.test.runner.DiscoverRunner',
         TEMPLATES=[
             {
                 'BACKEND': 'django.template.backends.django.DjangoTemplates',

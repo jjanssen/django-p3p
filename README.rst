@@ -26,7 +26,7 @@ Django P3P is an application which makes it easier to set those specific headers
 Requirements
 ------------
 
-Django 1.5.x or greater, Python 2.7 or greater.
+Django 1.8.x or greater, Python 2.7 or greater.
 
 
 Installation

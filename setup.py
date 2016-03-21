@@ -14,7 +14,7 @@ setup(
     license='Apache License, Version 2.0',
 
     requires=[
-        'Django (>=1.5)',
+        'Django (>=1.8)',
     ],
 
     description='''Django P3P makes it easier to set
