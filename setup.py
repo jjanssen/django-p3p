@@ -43,7 +43,7 @@ setup(
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: POSIX',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
         'Topic :: Internet :: WWW/HTTP :: Browsers',
         'Topic :: Internet :: WWW/HTTP :: Session'
     ],
