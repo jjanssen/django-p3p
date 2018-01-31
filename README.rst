@@ -26,7 +26,7 @@ Django P3P is an application which makes it easier to set those specific headers
 Requirements
 ------------
 
-Django 1.8.x or greater, Python 2.7 or greater.
+Django 1.11.x or greater, Python 3.4 or greater.
 
 
 Installation
@@ -46,7 +46,7 @@ Configuring django-p3p
 Add the following to your settings file:
 
     * Add ``p3p`` to ``INSTALLED_APPS``
-    * Add ``p3p.middleware.P3PMiddleware`` to ``MIDDLEWARE_CLASSES``
+    * Add ``p3p.middleware.P3PMiddleware`` to ``MIDDLEWARE``
 
 
 URL Configuration
@@ -54,7 +54,7 @@ URL Configuration
 
 You need to include the `p3p.urls` urlpatterns in your root url configuration, for e.g.::
 
-    (r'^w3c/', include('p3p.urls', namespace='p3p')),
+    (r'^w3c/', include('p3p.urls')),
     ...
     (r'^admin/', include(admin.site.urls)),
 

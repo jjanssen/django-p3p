@@ -1,20 +1,11 @@
 language: python
 python:
-  - "2.7"
-  - "3.3"
   - "3.4"
+  - "3.5"
+  - "3.6"
 env:
-  - DJANGO="django>=1.8.0,<1.9.0"
-  - DJANGO="django>=1.9.0,<1.10.0"
-  - DJANGO="django>=1.10.0,<1.11.0"
-matrix:
-  exclude:
-  - python: "3.3"
-    env: DJANGO="django>=1.8.0,<1.9.0"
-  - python: "3.3"
-    env: DJANGO="django>=1.9.0,<1.10.0"
-  - python: "3.3"
-    env: DJANGO="django>=1.10.0,<1.11.0"
+  - DJANGO="django>=1.11.0,<2.0"
+  - DJANGO="django>=2.0,<2.1"
 
 install:
   - travis_retry pip install -q coveralls  # installs coverage
@@ -26,15 +17,3 @@ script:
 
 after_success:
   - coveralls --verbose
-
-branches:
-  only:
-    - master
-    - develop
-
-notifications:
-  email:
-    recipients:
-      - j.janssen@lukkien.com
-    on_success: never
-    on_failure: always

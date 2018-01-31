@@ -1,5 +1,5 @@
 from django.test import SimpleTestCase
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 
 class ResolveP3PUrlTests(SimpleTestCase):
